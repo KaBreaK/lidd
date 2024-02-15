@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strona z przeszkodami</title>
+</head>
+<body>
+  <h1>Strona z przeszkodami</h1>
+  <p>Nie przejdziesz!</p>
+  <button onclick="sprobuj()">Spróbuj!</button>
+
+  <script>
+    function sprobuj() {
+      var komunikaty = [
+        "A może jednak nie?",
+        "Spróbuj jeszcze raz, ale tym razem na lewo!",
+        "Czy na pewno chcesz przejść? Może lepiej zostań?",
+        "Hmmm... coś mi się wydaje, że nie masz szans.",
+        "No dobra, spróbuj, ale ostrzegam, że to będzie trudne!"
+      ];
+
+      var losowyKomunikat = komunikaty[Math.floor(Math.random() * komunikaty.length)];
+      alert(losowyKomunikat);
+    }
+  </script>
+</body>
+</html>
